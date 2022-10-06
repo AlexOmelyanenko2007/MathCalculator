@@ -16,7 +16,7 @@
 
 # Язык программирования:
  - ## Python и библиотеки:
-### 1.PyQt5
-### 2.Matplotlib
-### 3.Math
+  - ### 1.PyQt5
+  - ### 2.Matplotlib
+  - ### 3.Math
 
