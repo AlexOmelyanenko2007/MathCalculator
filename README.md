@@ -19,3 +19,4 @@
   - ### 3.Math
 
 # Интерфейс
+![2022-10-21_16-06-36](https://user-images.githubusercontent.com/94148371/197203114-95c058d9-752d-4bf3-b6a2-6bc11013af70.png)
