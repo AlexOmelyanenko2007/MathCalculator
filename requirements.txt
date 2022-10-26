@@ -1,0 +1,5 @@
+PyQt5>=5.14.0
+pyqt5-tools>=5.14.0.1.7
+PyQt5-stubs>=5.14.1.1
+numpy>=1.22.0
+matplotlib>=3.6.0
