@@ -19,7 +19,9 @@
 
 # Интерфейс
 ## Главное окно
-![2022-10-21_16-06-36](https://user-images.githubusercontent.com/94148371/197203114-95c058d9-752d-4bf3-b6a2-6bc11013af70.png)
+![2022-10-26_22-28-07](https://user-images.githubusercontent.com/94148371/198118904-4926fc4c-002d-4de7-95aa-079521ef3537.png)
+
 
 ## Арифметика
-![2022-10-21_16-02-52 (2)](https://user-images.githubusercontent.com/94148371/197203433-9b806e21-820b-4697-abb0-fbd2b5651bb9.png)
+![2022-10-26_22-28-52](https://user-images.githubusercontent.com/94148371/198118934-e04c3437-2895-43a7-a854-df79062c84a1.png)
+
