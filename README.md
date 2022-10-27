@@ -25,4 +25,8 @@
 ## Арифметика
 ![2022-10-26_22-28-52](https://user-images.githubusercontent.com/94148371/198118934-e04c3437-2895-43a7-a854-df79062c84a1.png)
 
+## Арифметика
+![2022-10-27_16-08-02](https://user-images.githubusercontent.com/94148371/198293455-663ec013-abb6-4b31-9451-c8ee7ae33c90.png)
+
+
 # Сборка
