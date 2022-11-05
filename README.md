@@ -28,6 +28,10 @@
 ## Функции с построением графика
 ![2022-11-05_03-18-27](https://user-images.githubusercontent.com/94148371/200092157-6fe4f7f9-5e10-4262-872a-4f6986d3b053.png)
 
+## Алгебра
+![2022-11-05_03-24-26](https://user-images.githubusercontent.com/94148371/200092468-c6351eab-800f-4c8e-b664-dcf9023cad12.png)
 
+## Неравенства
+![2022-11-05_03-24-26](https://user-images.githubusercontent.com/94148371/200092474-17881c59-46a8-4092-b5c2-d2e858c3a8ca.png)
 
 # Сборка
