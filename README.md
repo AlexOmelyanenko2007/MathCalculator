@@ -25,8 +25,9 @@
 ## Арифметика
 ![2022-10-26_22-28-52](https://user-images.githubusercontent.com/94148371/198118934-e04c3437-2895-43a7-a854-df79062c84a1.png)
 
-## Функции меню
-![2022-10-27_16-08-02](https://user-images.githubusercontent.com/94148371/198293455-663ec013-abb6-4b31-9451-c8ee7ae33c90.png)
+## Функции с построением графика
+![2022-11-05_03-18-27](https://user-images.githubusercontent.com/94148371/200092157-6fe4f7f9-5e10-4262-872a-4f6986d3b053.png)
+
 
 
 # Сборка
