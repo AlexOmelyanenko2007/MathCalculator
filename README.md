@@ -21,7 +21,6 @@
 ## Главное окно
 ![2022-10-26_22-28-07](https://user-images.githubusercontent.com/94148371/198118904-4926fc4c-002d-4de7-95aa-079521ef3537.png)
 
-
 ## Арифметика
 ![2022-10-26_22-28-52](https://user-images.githubusercontent.com/94148371/198118934-e04c3437-2895-43a7-a854-df79062c84a1.png)
 
