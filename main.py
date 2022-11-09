@@ -387,7 +387,7 @@ class Ariphmetic_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "Калькулятор"))
         self.label.setText(_translate("MainWindow", "0"))
         self.btn_0.setText(_translate("MainWindow", "0"))
-        self.btn_equate.setText(_translate("MainWindow", "="))  
+        self.btn_equate.setText(_translate("MainWindow", "="))
         self.btn_1.setText(_translate("MainWindow", "1"))
         self.btn_7.setText(_translate("MainWindow", "7"))
         self.btn_add_sub.setText(_translate("MainWindow", "±"))
@@ -595,7 +595,7 @@ class Function_liney(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Functions"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Решение функций"))
         self.label.setText(_translate("MainWindow", "Функция на графике"))
         self.pushButton.setText(_translate("MainWindow", "Ввести"))
         self.label_y.setText(_translate("MainWindow", "y = "))
@@ -619,8 +619,11 @@ class AlgLin(object):
         self.is_alg = alg
         Form.setObjectName("Form")
         Form.resize(237, 255)
+        # Form.resize(237, 255)
         self.solve_example = QtWidgets.QPushButton(Form, clicked=lambda: self.solve_this())
-        self.solve_example.setGeometry(QtCore.QRect(130, 220, 91, 20))
+
+        self.solve_example.setStyleSheet("background-color:rgb(255, 173, 93)")
+        self.solve_example.setGeometry(QtCore.QRect(130, 200, 91, 40))
         self.solve_example.setObjectName("solve_example")
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(20, 100, 91, 21))
@@ -640,7 +643,7 @@ class AlgLin(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Решение алгебраического и линейного"))
+        Form.setWindowTitle(_translate("Form", "Решение задач по математике"))
         self.solve_example.setText(_translate("Form", "Решить"))
         self.label.setText(_translate("Form", "Решение:"))
         self.label_2.setText(_translate("Form", "Задача:"))
@@ -650,7 +653,7 @@ class AlgLin(object):
         if self.is_alg:
             input_str = txt
             transformations = standard_transformations + (implicit_multiplication_application,)
-            slv = expand(parse_expr(input_str, transformations=transformations))  
+            slv = expand(parse_expr(input_str, transformations=transformations))
             self.solved.setText(str(slv))
         else:
             if len(txt.split('=')) == 1:
