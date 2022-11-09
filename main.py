@@ -7,7 +7,6 @@ from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
 from matplotlib.figure import Figure
 import numpy as np
 from sympy import Symbol, expand
-
 from sympy.solvers import solve
 from sympy.parsing.sympy_parser import (parse_expr, standard_transformations, implicit_multiplication_application)
 
@@ -15,7 +14,6 @@ from sympy.parsing.sympy_parser import (parse_expr, standard_transformations, im
 class Ui_MainWindow(object):
     def __init__(self):
         super().__init__()
-        # self.setupUi()
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -120,7 +118,6 @@ class Ui_MainWindow(object):
         self.menu.addAction(self.actionMathCalcurator)
         self.menubar.addAction(self.menu.menuAction())
         self.menubar.addAction(self.menu_2.menuAction())
-
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
@@ -390,7 +387,7 @@ class Ariphmetic_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "Калькулятор"))
         self.label.setText(_translate("MainWindow", "0"))
         self.btn_0.setText(_translate("MainWindow", "0"))
-        self.btn_equate.setText(_translate("MainWindow", "="))  # кнопка равенства
+        self.btn_equate.setText(_translate("MainWindow", "="))  
         self.btn_1.setText(_translate("MainWindow", "1"))
         self.btn_7.setText(_translate("MainWindow", "7"))
         self.btn_add_sub.setText(_translate("MainWindow", "±"))
@@ -463,31 +460,21 @@ class Ariphmetic_MainWindow(object):
             error.exec()
 
     def recalculate_percent(self, example):
-        # print(type(re))
         result = re.findall(r"(\d*[\+\-\*\/]?\d*\%[\+\-\*\/]?\d*)", example)
 
         for el in result:
             perc = re.findall(r"(\d*\%)", el)
-            # print(el, ' -> ', perc)
             num_perc = el.find(perc[0])
-            # print('dig number: ', num_perc)
             if num_perc == 0:
                 sub = re.split('\+|\-|\*|\/', el)
                 to_replace = int(sub[1]) * int(sub[0][:-1]) / 100
                 example = example.replace(sub[0], str(to_replace))
-                # print(example)
             else:
                 sub = re.split('\+|\-|\*|\/', el)
                 to_replace = int(sub[0]) * int(sub[1][:-1]) / 100
                 example = example.replace(sub[1], str(to_replace))
-            # print(el, ' -> ', perc)
-        # for el in result:
-        #     print('-- ', el)
-        #     sub = re.split('\+|\-|\*|\/', el)
-        #     print(sub)
-        # print('example: ', example)
-        # print('result: ', result)
         return example
+
 
     def popup_action(self, btn):
         if btn.text() == "Ok":
@@ -496,8 +483,10 @@ class Ariphmetic_MainWindow(object):
             self.label.setText("")
             self.btn_equate = False
 
+
     def clear(self):
         self.label.setText("0")
+
 
     def negative(self):
         try:
@@ -505,10 +494,9 @@ class Ariphmetic_MainWindow(object):
             self.label.setText(str(res))
         except SyntaxError:
             self.label.append('0')
-        # self.label.setText(self.expression[-1])
+
 
     def procent(self):
-        # number / 100 * %
         if not self.btn_procent:
             res = eval(self.label.text())
             self.label.setText(str(res / 100))
@@ -549,7 +537,6 @@ class Function_liney(object):
                                   "color:rgb(255, 255, 255);")
         self.widget.setObjectName("widget")
         self.label = QtWidgets.QLabel(self.widget)
-        # self.label.setGeometry(QtCore.QRect(10, 10, 181, 20))
         self.label.setGeometry(QtCore.QRect(100, 10, 181, 20))
         font = QtGui.QFont()
         font.setPointSize(7)
@@ -621,12 +608,9 @@ class Function_liney(object):
 
     def draw_plot(self):
         self.sc.axes.cla()
-        # print(self.label_vvod.text())
         x = np.linspace(-5, 5, 100)
-        # x = np.linspace(1)
         y = eval(self.label_vvod.text())
         self.sc.axes.plot(x, y)
-        # self.frame.setCentralWidget(sc)
         self.sc.draw()
 
 
@@ -666,16 +650,14 @@ class AlgLin(object):
         if self.is_alg:
             input_str = txt
             transformations = standard_transformations + (implicit_multiplication_application,)
-            slv = expand(parse_expr(input_str, transformations=transformations))  # 3*x*y + x + 2*y + 1
+            slv = expand(parse_expr(input_str, transformations=transformations))  
             self.solved.setText(str(slv))
         else:
             if len(txt.split('=')) == 1:
                 strToSolve = txt
             else:
                 strToSolve = txt.split('=')
-            # x = Symbol('x')
             slv = solve(strToSolve)
-            # print(slv)
             self.solved.setText(str(slv))
 
 
@@ -685,7 +667,6 @@ if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
-    # ui = Ariphmetic_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec())
