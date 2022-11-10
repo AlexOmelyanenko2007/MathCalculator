@@ -28,8 +28,8 @@
 ![2022-11-05_03-18-27](https://user-images.githubusercontent.com/94148371/200092157-6fe4f7f9-5e10-4262-872a-4f6986d3b053.png)
 
 ## Алгебра
-![2022-11-05_03-24-26](https://user-images.githubusercontent.com/94148371/200092468-c6351eab-800f-4c8e-b664-dcf9023cad12.png)
+![2022-11-10_02-11-08](https://user-images.githubusercontent.com/94148371/201153982-ae3dbc7a-0f69-47e2-8fb6-59bbd000c336.png)
 
 ## Неравенства
-![2022-11-05_03-24-26](https://user-images.githubusercontent.com/94148371/200092474-17881c59-46a8-4092-b5c2-d2e858c3a8ca.png)
+![2022-11-10_02-11-08](https://user-images.githubusercontent.com/94148371/201154003-0c39a0fb-de72-4f54-b854-b14bed166e16.png)
 
